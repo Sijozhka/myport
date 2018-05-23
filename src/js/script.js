@@ -1,12 +1,15 @@
 	new WOW().init();
 	var list_team = document.querySelectorAll(".ourteam__list__item");
-	var tooltip_arrow = document.querySelector(".ourteam__descr__block");
-	console.log(list_team);
-	console.log(tooltip_arrow);
-	list_team.onclick =  function(){
-		this.classList.add('active_list');
-		tooltip_arrow.style.left += '200px' ;
+	var descr = document.querySelector(".ourteam__descr__block");
+	
+	var classNameDefault = 'ourteam__descr__block';
+	[].forEach.call(list_team,function(el){
+		el.addEventListener('click', function (e) {
+			descr.className = classNameDefault + ' ' +this.dataset.name;
+    		
+    	});
+	});
 
-	};
+	
 
 

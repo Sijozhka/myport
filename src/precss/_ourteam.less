@@ -38,7 +38,7 @@
 		&__item {
 			.col();
 			.size(3);
-			
+			cursor:pointer;
 			font-family: Poppins;
 			color:  #313131;
 			
@@ -103,7 +103,7 @@
 			  content: '';
 			  position: absolute;
 			  bottom: 100%;
-			  left: 10%;
+			  
 			  margin-left: -12px;
 			  width: 0; height: 0;
 			  border-bottom: 12px solid #ccc;
@@ -115,14 +115,36 @@
 			  content: '';
 			  position: absolute;
 			  bottom: 100%;
-			  left: 10%;
+			  
 			  margin-left: -8px;
 			  width: 0; height: 0;
 			  border-bottom: 8px solid #fff;
 			  border-right: 8px solid transparent;
 			  border-left: 8px solid transparent;
-						}
+			}
+			
 		}
+		.first {
+			&::before, &::after {
+				left:7%;
+			}
+		}
+		.second {
+			&::before, &::after {
+				left:35%;
+			}
+		}
+		.third {
+			&::before, &::after {
+				left:65%;
+			}
+		}
+		.fourth {
+			&::before, &::after {
+				left:90%;
+			}
+		}
+		
 
 	}
 	
