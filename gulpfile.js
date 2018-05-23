@@ -18,7 +18,7 @@ $.path.task.forEach(function(taskPath){
 });
 
 $.gulp.task('default',$.gulp.series(
-	'clean','less','html','js','imagemin',
+	'clean','less','css','html','js','imagemin',
 	$.gulp.parallel('watch','serv')
 	)
 );

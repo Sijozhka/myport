@@ -1,0 +1,131 @@
+.ourteam {
+	background-color:  #f7f7f7;
+	max-width: 1920px;
+	height: 1385px;
+	&__block {
+		.wrapper();
+		padding: 142px 0 100px 0;
+		
+	}
+	&__row {
+		.row-flex();
+		flex-direction:column;
+		justify-content: center;
+		align-items: justify;
+		
+	} 
+	&__title {
+		font-family: LibreBaskerville;
+		color:  #313131;
+		font-size: 48px;
+		font-weight: 700;
+		
+		text-align: center;
+	}
+	&__text {
+		margin-top: 50px;
+		font-family: Poppins;
+		color:  #616161;
+		font-size: 20px;
+		font-weight: 400;
+		
+		text-align: center;
+	}
+	&__list {
+		margin-top: 79px;
+		.row-flex();
+		justify-content: space-around;
+		&__item {
+			.col();
+			.size(3);
+			
+			font-family: Poppins;
+			color:  #313131;
+			
+			display:flex;
+			flex-wrap:wrap;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 30px; 
+			padding: 0;
+			margin-left: 0;
+			margin-right: 0;
+			text-align: justify;
+			
+		}
+		&__img {
+			box-sizing: border-box;  
+			height: 250px;
+			width: 200px;
+			background: purple;
+			border: 10px solid #303030;
+			margin-bottom: 30px;
+		}
+		&__name {
+			font-size: 18px;
+			font-weight: 500;
+		}
+		&__job {
+			font-size: 12px;
+			
+		}
+
+		
+	}
+	&__descr {
+		
+		.row-flex();
+		justify-content: space-around;
+		
+		&__block {
+			.col();
+			.size(12);
+			background: #FFF;
+			box-sizing:border-box;
+			font-family: Poppins;
+			color:  #313131;
+			border: 3px solid #ccc;
+			border-radius: 10px;
+			display:flex;
+			flex-wrap:wrap;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 60px; 
+			padding: 20px;
+			margin-left: 60px;
+			margin-right: 60px;
+			text-align: justify;
+			position: relative;
+
+			&::before {
+			  content: '';
+			  position: absolute;
+			  bottom: 100%;
+			  left: 10%;
+			  margin-left: -12px;
+			  width: 0; height: 0;
+			  border-bottom: 12px solid #ccc;
+			  border-right: 12px solid transparent;
+			  border-left: 12px solid transparent;
+				
+			}
+			&::after {
+			  content: '';
+			  position: absolute;
+			  bottom: 100%;
+			  left: 10%;
+			  margin-left: -8px;
+			  width: 0; height: 0;
+			  border-bottom: 8px solid #fff;
+			  border-right: 8px solid transparent;
+			  border-left: 8px solid transparent;
+						}
+		}
+
+	}
+	
+	
+		
+}	
