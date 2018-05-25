@@ -5,6 +5,9 @@
 	&__block {
 		.wrapper();
 		padding: 142px 0 100px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		
 	}
 	&__row {
@@ -93,10 +96,10 @@
 			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 60px; 
-			padding: 20px;
+			padding: 80px;
 			margin-left: 60px;
 			margin-right: 60px;
-			text-align: justify;
+			
 			position: relative;
 
 			&::before {
@@ -147,6 +150,57 @@
 		
 
 	}
+	&__about {
+		flex:1;
+		text-align: left;
+		
+	}
+	&__title {
+		font-size: 24px;
+		text-align: left;
+		margin: 0;
+	}
+	&__text {
+		text-align: left;
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	&__link {
+		padding: 20px;
+	}
+
+	&__socials {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 20px;
+		&--item {
+			
+		}
+		&::before {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: url()
+		}
+		&--fb{
+			background-image: url('assets/img/fb1.png');
+		}
+		&--tw{
+			background-image: url('assets/img/tw1.png');
+		}
+		&--lkdn{
+			background-image: url('assets/img/lkdn1.png');
+		}
+		&--inst{
+			background-image: url('assets/img/inst1.png');
+		}
+		
+		
+	}
+
 	
 	
 		
