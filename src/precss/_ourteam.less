@@ -15,11 +15,11 @@
 		flex-direction:column;
 		justify-content: center;
 		align-items: justify;
-		
+		text-align: center;
 	} 
 	&__title {
 		font-family: LibreBaskerville;
-		color:  #313131;
+		color:  #313231;
 		font-size: 48px;
 		font-weight: 700;
 		
@@ -76,6 +76,8 @@
 
 		
 	}
+
+
 	&__descr {
 		
 		.row-flex();
@@ -147,34 +149,33 @@
 				left:90%;
 			}
 		}
+
+		&__about {
+			flex:1;
+			text-align: left;
 		
+		}
+		&__title {
+			font-size: 24px;
+			text-align: left;
+			margin: 0;
+		}
+		&__text {
+			text-align: left;
+			margin: 0;
+			margin-top: 20px;
+		}
 
-	}
-	&__about {
-		flex:1;
-		text-align: left;
-		
-	}
-	&__title {
-		font-size: 24px;
-		text-align: left;
-		margin: 0;
-	}
-	&__text {
-		text-align: left;
-		margin: 0;
-		margin-top: 20px;
-	}
+		&__link {
+			padding: 20px;
+		}
 
-	&__link {
-		padding: 20px;
-	}
-
-	&__socials {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		padding: 20px;
+		&__socials {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding: 20px;
+		}
 		&--item {
 			
 		}
@@ -200,6 +201,11 @@
 		
 		
 	}
+		
+
+
+	
+	
 
 	
 	
