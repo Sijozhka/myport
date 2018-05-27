@@ -61,9 +61,18 @@
 			box-sizing: border-box;  
 			height: 250px;
 			width: 200px;
-			background: purple;
-			border: 10px solid #303030;
+			padding: 0;
+			overflow: hidden;
+			
+			border: 10px solid #aaa;
+			border-radius: 7px;
 			margin-bottom: 30px;
+			img {
+
+				max-width: 100%;
+				margin: 0;
+				padding: 0;
+			}
 		}
 		&__name {
 			font-size: 18px;
@@ -71,7 +80,7 @@
 		}
 		&__job {
 			font-size: 12px;
-			
+		
 		}
 
 		
@@ -151,53 +160,113 @@
 		}
 
 		&__about {
-			flex:1;
+			
 			text-align: left;
+
 		
 		}
 		&__title {
 			font-size: 24px;
 			text-align: left;
-			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		&__row {
+			display:flex;
 		}
 		&__text {
 			text-align: left;
 			margin: 0;
-			margin-top: 20px;
+			
 		}
 
 		&__link {
-			padding: 20px;
+			flex:1;
+			margin: 50px;
+			display: flex;
+			flex-direction:column;
+			justify-content: center;
+			img {
+				display: block;
+
+				min-width: 36px;
+			}
 		}
 
 		&__socials {
+			
+			flex:1;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-around;
-			padding: 20px;
-		}
-		&--item {
+			justify-content: center;
+			padding: 0px 50px 15px 50px; 
+			border-left: 2px solid #ddd;
+			margin: 0;
+			&__item {
+				display: block;
+				margin: 0;
+				padding: 0;
+				padding-left:15px;
+				height: 30px;
+			 	&--fb::before{
+			 		content: '';
+					display: block;
+					position:relative;
+					left:-25px;
+					top:20px;
+					
+					width: 15px;
+					height: 15px;
+					
+					
+					 background: url('../img/fb-1.png'); 
+			
+			
+				}
+				&--tw::before{
+					content: '';
+					display: block;
+					position:relative;
+					left:-25px;
+					top:20px;
+					
+					width: 15px;
+					height: 15px;
+					background-image: url('../img/tw-1.png');
+				
+				}
+				&--lkdn::before{
+					content: '';
+					display: block;
+					position:relative;
+					left:-25px;
+					top:20px;
+					
+					width: 15px;
+					height: 15px;
+					background-image: url('../img/lkdn-1.png');
+				
+				}
+				&--inst::before{
+					content: '';
+					display: block;
+					position:relative;
+					left:-25px;
+					top:20px;
+					
+					width: 15px;
+					height: 15px;
+					background-image: url('../img/inst-1.png');
+				
+				} 
+				
+			}
+			 
 			
 		}
-		&::before {
-			content: '';
-			display: block;
-			width: 20px;
-			height: 20px;
-			background-image: url()
-		}
-		&--fb{
-			background-image: url('assets/img/fb1.png');
-		}
-		&--tw{
-			background-image: url('assets/img/tw1.png');
-		}
-		&--lkdn{
-			background-image: url('assets/img/lkdn1.png');
-		}
-		&--inst{
-			background-image: url('assets/img/inst1.png');
-		}
+		
+		
+		
 		
 		
 	}
